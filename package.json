@@ -1,0 +1,39 @@
+{
+  "name": "hapi-auth-service",
+  "version": "1.0.0",
+  "description": "A user authentication service using Hapi.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciaga/hapi-auth-service.git"
+  },
+  "keywords": [
+    "hapi",
+    "react",
+    "redux"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lib/server.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/server.js"
+  },
+  "author": "Mark Arciaga",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "babel-cli": "^6.14.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "bcrypt": "^0.8.7",
+    "boom": "^4.0.0",
+    "dotenv": "^2.0.0",
+    "glob": "^7.0.6",
+    "hapi": "^15.0.3",
+    "joi": "^9.0.4",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "^4.6.0",
+    "nodemon": "^1.10.2"
+  }
+}
